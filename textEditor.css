@@ -1,0 +1,82 @@
+		.am-topbar-brand {
+			margin: 0;
+			padding: 0 0px;
+			float: right;
+	   		font-size: 1.6rem;
+			height: 0px;
+			line-height: 30px;
+			font-family: "Monaco","Consolas",Arial,FreeSans;
+		}
+		.am-topbar {
+			margin-bottom: 0;
+		}
+		body {
+    		margin: 0;
+    		background: #fdf5e6;
+    		font-family: "Segoe UI",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3",FontAwesome,sans-serif;
+    		font-weight: 300;
+    		color: #333;
+    		font-size: 1.6rem;
+		}
+		#te-pre {
+			height: 100%;
+			padding: 0;
+			margin: 0;
+		}
+		#te-main {
+			height: 100%;
+		}
+		#te-body {
+			bottom: 150px;
+			top: 14px;
+			position:absolute;
+			width: 100%;
+			height: 100%;
+		}
+		.am-topbar {
+    		position: relative;
+    		min-height: 5%;
+    		background: #f8f8f8;
+    		border-width: 0 0 1px;
+    		border-style: ridge;
+    		border-color: #f8f8f8;
+		}
+		.switch{   
+        display:none;   
+    }   
+		.button-style-audio {
+			position: absolute;
+			top: 3px;
+			left: 3px;
+			height: 12px;
+			font-size: 12px;
+			font-family: "Consolas",Arial,"Monaco";
+			background: #FAF0E6;
+		}
+		.button-style-downloadfile {
+			position: absolute;
+			top: 3px;
+			height:12px;
+			right:180px;
+	   		font-size: 12px;
+	   		font-family: "Consolas",Arial,"Monaco";
+			background: #FAF0E6;
+		}
+		
+		.commandLine {
+			position: absolute;
+			bottom: 5px;
+			left: 45%;
+			height: 20px;
+			weight: 10%;
+			background: rgba(0,0,0,0.2);
+			border-radius: 5px;
+			border: solid 2px #FFEFD5;
+			padding: 0.5px;
+			font-size:14px;
+			font-family: Monaco,"Consolas",Arial;
+			text-align: center;
+			color: #000000;
+			z-index:3;
+		}
+    
