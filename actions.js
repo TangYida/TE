@@ -2,16 +2,17 @@ function downloadfileClick()
 {
 	showMsg(":w ",2);
 }
+function openfileClick()
+{
+	showMsg(":e ",2);
+}
 function audioClick()
 {
 	editor.focus();  
 	//let session = editor.getSession();
 	//let count = session.getLength();
 	//editor.gotoLine(count, session.getLine(count - 1).length);
-	if(isAudioOn) {
-		isAudioOn = false;
-	}
-	else isAudioOn = true;
+	isAudioOn = !isAudioOn;
 }
 
 /******************************************************/
@@ -25,6 +26,8 @@ function readCommand(command)
 		command = command.substring(index + 1);
 	}
 
+	/*TODO BIG TODO! MUST TODO!*/
+	/*single cmd*/
 	var cmd = command.substring(1,
 			command.indexOf(' '));
 	var args = command.substring(
@@ -42,6 +45,21 @@ function callCmd(cmd,args)
 			storage.setItem(args,editor.getValue());
 		else 
 			//...
+			;
+		break;
+	case 'e':
+		if(args) {
+			editor.session.setValue(storage[args]);
+		}
+		else
+			throw error.syntaxErr;
+		break;
+	case 'color':
+		if(args) {
+			editor.setTheme("ace/theme/" + args);
+			storage.setItem("_code-theme",args);
+		} else
+			///...
 			;
 		break;
 	default:

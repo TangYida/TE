@@ -53,11 +53,14 @@
 			font-family: "Consolas",Arial,"Monaco";
 			background: #FAF0E6;
 		}
-		.button-style-downloadfile {
-			position: absolute;
+		.button-style-group {
+			position :absolute;
 			top: 3px;
-			height:12px;
-			right:180px;
+			height: 12px;
+			right: 180px;
+		}
+
+		.button-style {
 	   		font-size: 12px;
 	   		font-family: "Consolas",Arial,"Monaco";
 			background: #FAF0E6;

@@ -49,7 +49,10 @@
 			<!--<a href="#">-->Text Editor<!--</a>-->
 				</h1>
 				<a href="#" class="button icon rss  button-style-audio" id="audioCon" onclick="audioClick()">Audio</a>
-				<a href="#" class="button icon edit button-style-downloadfile" id="downloadfile" onclick="downloadfileClick()">Save</a>	
+				<div class = "button-group button-style-group">
+				<a href="#" class="button icon log button-style" id="openfile" onclick="openfileClick()">Open</a>
+				<a href="#" class="button icon edit button-style" id="downloadfile" onclick="downloadfileClick()">Save</a>	
+				</div>
 		</header>
 		
 		</div>
@@ -85,6 +88,7 @@
 				enableSnippets: true,
 				enableLiveAutocompletion: true
 			});
+			testDebug();
 			
 			$(document).keydown(function(event){
 				if(isAudioOn) {
