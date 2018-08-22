@@ -5,7 +5,7 @@
 	   		font-size: 1.6rem;
 			height: 0px;
 			line-height: 30px;
-			font-family: "Monaco","Consolas",Arial,FreeSans;
+			font-family: "Monaco","Consolas","DejaVu_Sans_Mono",Arial,FreeSans;
 		}
 		.am-topbar {
 			margin-bottom: 0;
@@ -13,7 +13,7 @@
 		body {
     		margin: 0;
     		background: #fdf5e6;
-    		font-family: "Segoe UI",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3",FontAwesome,sans-serif;
+    		font-family: "Monaco","Segoe UI","Consolas",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3",FontAwesome,sans-serif;
     		font-weight: 300;
     		color: #333;
     		font-size: 1.6rem;

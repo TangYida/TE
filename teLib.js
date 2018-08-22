@@ -1,3 +1,6 @@
+var error = new Object();
+error.unknownCmd = "UNKNOWN COMMAND!";
+
 function showMsg(str,type) {
 	var command = document.getElementById("commandLine");
 	if(type == 1)

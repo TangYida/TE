@@ -18,30 +18,39 @@ function audioClick()
 
 function readCommand(command)
 {
-	if(command.charAt(0) == ':') {
-		//TODO single char
-		var cmd = command.substring(1,
-				command.indexOf(' '));
-		var args = command.substring(
-				command.indexOf(' ') + 1);
-		callCmd(cmd,args);
-	} else {
-		callNml(command);
+	if(command.charAt(0) == '"') {
+		var index;
+		for(index=1;command.charAt(index) && command.charAt(index) != '"';index++)
+		{}
+		command = command.substring(index + 1);
 	}
+
+	var cmd = command.substring(1,
+			command.indexOf(' '));
+	var args = command.substring(
+			command.indexOf(' ') + 1);
+	callCmd(cmd,args);
 }
 
 function callCmd(cmd,args)
 {
-	if(cmd == 'w') {
-		if(args != null) {
+	try{
+
+	switch(cmd) {
+	case 'w':
+		if(args)
 			storage.setItem(args,editor.getValue());
-		} else 
+		else 
 			//...
 			;
+		break;
+	default:
+		throw error.unknownCmd;
+		break;
 	}
-}
-	
-function callNml(cmd)
-{
-	//...
+
+	}/*throw*/
+	catch(err) {
+		alert(err);
+	}
 }
